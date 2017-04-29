@@ -23,3 +23,9 @@ print(len(tolva))
 
 while len(spilari)!=0 and len(tolva)!=0:
     teljari=
+
+
+
+
+
+print("Done.")
