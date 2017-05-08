@@ -27,20 +27,24 @@ while len(spilari)!=0 and len(tolva)!=0:
     spil2=spil2.split(",")
     # Spilari gerir þegar 2 fer upp í teljara
     if teljari%2==0:
-        print("Þú drókst spilið",spil[0],"1. Þyngd",spil[1],"2. Mjólkurlagni dætra",spil[2],"3. Einkunn ullar",spil[3],"4. Fjöldi afkvæma",spil[4],"5. Einkunn læris",spil[5],"6. Frjósemi",spil[6],"7. Gerð/þykkt bakvöðva",spil[7],"8. Einkunn fyrir malir",spil[8])
+        print("Þú drókst spilið",spil[0],"\n","1. Þyngd",spil[1],"\n","2. Mjólkurlagni dætra",spil[2],"\n","3. Einkunn ullar",spil[3],"\n","4. Fjöldi afkvæma",spil[4],"\n","5. Einkunn læris",spil[5],"\n","6. Frjósemi",spil[6],"\n","7. Gerð/þykkt bakvöðva",spil[7],"\n","8. Einkunn fyrir malir",spil[8])
         # Spilari velur frá 1-8
         veldu=int(input("Veldu flokk "))
-        print("tölvann dróg spilið",spil2[0],"1. Þyngd",spil2[1],"2. Mjólkurlagni dætra",spil2[2],"3. Einkunn ullar",spil2[3],"4. Fjöldi afkvæma",spil2[4],"5. Einkunn læris",spil2[5],"6. Frjósemi",spil2[6],"7. Gerð/þykkt bakvöðva",spil2[7],"8. Einkunn fyrir malir",spil2[8])
-        time.sleep(1)
+        print("----------------")
+        print("tölvann dróg spilið",spil2[0],"\n","1. Þyngd",spil2[1],"\n","2. Mjólkurlagni dætra",spil2[2],"\n","3. Einkunn ullar",spil2[3],"\n","4. Fjöldi afkvæma",spil2[4],"\n","5. Einkunn læris",spil2[5],"\n","6. Frjósemi",spil2[6],"\n","7. Gerð/þykkt bakvöðva",spil2[7],"\n","8. Einkunn fyrir malir",spil2[8])
+        input("Enter Til að halda áfram")
+        print("----------------")
     # Talvan gerir þegar 2 fer ekki upp í teljara
     if teljari%2!=0:
-        print("tölvann dróg spilið",spil2[0],"1. Þyngd",spil2[1],"2. Mjólkurlagni dætra",spil2[2],"3. Einkunn ullar",spil2[3],"4. Fjöldi afkvæma",spil2[4],"5. Einkunn læris",spil2[5],"6. Frjósemi",spil2[6],"7. Gerð/þykkt bakvöðva",spil2[7],"8. Einkunn fyrir malir",spil2[8])
+        print("tölvann dróg spilið",spil2[0],"\n","1. Þyngd",spil2[1],"\n","2. Mjólkurlagni dætra",spil2[2],"\n","3. Einkunn ullar",spil2[3],"\n","4. Fjöldi afkvæma",spil2[4],"\n","5. Einkunn læris",spil2[5],"\n","6. Frjósemi",spil2[6],"\n","7. Gerð/þykkt bakvöðva",spil2[7],"\n","8. Einkunn fyrir malir",spil2[8])
         randomtala=randint(1,8)
-        time.sleep(1)
+        time.sleep(2)
+        print("----------------")
         # Talvan velur tölu frá 1-8 að handhófi
         print("Tölvann valdi ",randomtala)
-        print("Þú drókst spilið",spil[0],"1. Þyngd",spil[1],"2. Mjólkurlagni dætra",spil[2],"3. Einkunn ullar",spil[3],"4. Fjöldi afkvæma",spil[4],"5. Einkunn læris",spil[5],"6. Frjósemi",spil[6],"7. Gerð/þykkt bakvöðva",spil[7],"8. Einkunn fyrir malir",spil[8])
-        time.sleep(1)
+        print("Þú drókst spilið",spil[0],"\n","1. Þyngd",spil[1],"\n","2. Mjólkurlagni dætra",spil[2],"\n","3. Einkunn ullar",spil[3],"\n","4. Fjöldi afkvæma",spil[4],"\n","5. Einkunn læris",spil[5],"\n","6. Frjósemi",spil[6],"\n","7. Gerð/þykkt bakvöðva",spil[7],"\n","8. Einkunn fyrir malir",spil[8])
+        input("Enter Til að halda áfram")
+        print("----------------")
     # Reiknar muninn á milli það sem talvan hefur og notandinn
     utkoma=float(spil[veldu])-float(spil2[veldu])
     # Ef útkoman er meiri en 0
@@ -79,6 +83,7 @@ while len(spilari)!=0 and len(tolva)!=0:
     teljari+=1
     # Segir hve mikið hver er með
     print("Spilari er með", len(spilari), "talvan er með", len(tolva))
+    print("------------------")
 # Ef talvan er með 0 spil
 if len(tolva)==0:
     print("Spilari vann spilið")
